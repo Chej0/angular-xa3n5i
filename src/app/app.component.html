@@ -1,4 +1,11 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<mat-sidenav-container  class="app example-sidenav-container" autosize>
+  <mat-sidenav #sidenav class="example-sidenav sidenav" mode="side" opened="true" [ngStyle]="{ 'width': !collapsedSidebar ? '250px':'70px' }">
+    <button mat-icon-button (click)="collapsedSidebar = !collapsedSidebar">
+      <mat-icon>menu</mat-icon>
+   </button>
+  </mat-sidenav>
+
+  <div fxFlex  class="example-sidenav-content">
+    a verss
+  </div>
+</mat-sidenav-container>
